@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<!-- => NOTE: doctype is uppercase as my VS Code's prettier and emmit extension automatically
+making it uppercase (Note ++ was broken I had to uninstall it and forgot to
+reinstall). 
+
+=> The site is not responsive. (1366 * 768) resolution recommended for better experience.  -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Clone</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    input {
+      width: 80%;
+      height: 100%;
+      border-radius: 30px;
+      padding-left: 20px;
+      font-size: 1.1rem;
+      border: none;
+      outline: none;
+      background-color: #f0f2f5;
+    }
+
+    .woum {
+      width: 90%;
+      height: 40px;
+      margin-left: 20px;
+    }
+  </style>
+  <body>
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+      <!-- navbar tr -->
+      <tr>
+        <!-- navbar td -->
+
+        <td align="center" valign="center" colspan="3" height="56px">
+          <!-- main navbar -->
+          <table
+            border="0"
+            cellspacing="0"
+            cellpadding="0"
+            width="98%"
+            height="40px"
+          >
+            <tr>
+              <!-- Facebook Logo -->
+              <td width="3%" height="40px">
+                <img
+                  src="images/fb_logo.png"
+                  alt="Facebook Logo"
+                  height="40px"
+                  width="40px"
+                />
+              </td>
+              <!-- Facebook Logo -->
+              <!-- search bar -->
+              <td width="24.5%">
+                <input
+                  type="search"
+                  name="search"
+                  value=""
+                  placeholder="Search Facebook"
+                />
+              </td>
+              <!-- search bar -->
+              <!-- Home -->
+              <td align="center" width="10%">
+                <img
+                  src="images/house-solid.svg"
+                  alt="Home"
+                  height="28px"
+                  title="Home"
+                />
+              </td>
+              <!-- Home -->
+              <!-- Profile -->
+              <td align="center" width="10%">
+                <img
+                  src="images/circle-user-regular.svg"
+                  alt="Profile"
+                  height="28px"
+                  title="Profile"
+                />
+              </td>
+              <!-- Profile -->
+              <!-- Watch -->
+              <td align="center" width="10%">
+                <img
+                  src="images/display-solid.svg"
+                  alt="Profile"
+                  height="28px"
+                  title="Profile"
+                />
+              </td>
+              <!-- Watch -->
+              <!-- Profile -->
+              <td align="center" width="10%">
+                <img
+                  src="images/store-solid.svg"
+                  alt="Market PLace"
+                  height="28px"
+                  title="Market Place"
+                />
+              </td>
+              <!-- Profile -->
+              <!-- Group -->
+              <td align="center" width="10%">
+                <img
+                  src="images/user-group-solid.svg"
+                  alt="Groups"
+                  height="28px"
+                  title="Groups"
+                />
+              </td>
+              <!-- Profile -->
+              <!-- Menu -->
+              <td align="right" width="10.5%">
+                <img
+                  src="images/circle-solid.svg"
+                  alt="menu"
+                  title="Menu"
+                  height="40px"
+                  width="40px"
+                />
+              </td>
+              <!-- Menu -->
+              <!-- Messenger -->
+              <td align="center" width="4%">
+                <img
+                  src="images/facebook-messenger.svg"
+                  alt="Messenger"
+                  title="Messengers"
+                  height="40px"
+                  width="40px"
+                />
+              </td>
+              <!-- Messenger -->
+              <!-- Notification -->
+              <td align="center" width="4%">
+                <img
+                  src="images/bell-solid.svg"
+                  alt="Notification"
+                  title="Notification"
+                  height="40px"
+                  width="40px"
+                />
+              </td>
+              <!-- Notification -->
+              <!-- Account -->
+              <td align="center" width="4%">
+                <img
+                  src="images/circle-solid.svg"
+                  alt="Account"
+                  title="Account"
+                  height="40px"
+                  width="40px"
+                />
+              </td>
+              <!-- Account -->
+            </tr>
+          </table>
+          <!-- main navbar -->
+        </td>
+        <!-- navbar td -->
+      </tr>
+      <!-- navbar tr -->
+
+      <tr>
+        <!-- left side bar -->
+        <td width="25%" height="700px" style="background-color: #f0f2f5">
+          <table
+            border="0"
+            cellspacing="0"
+            cellpadding="0"
+            height="660px"
+            width="80%"
+          >
+            <!-- timeline tr-->
+            <tr>
+              <!-- timeline td-->
+              <td width="100%" height="44px">
+                <!-- timeline inner table- takes pp and name -->
+                <table
+                  border="0"
+                  cellspacing="0"
+                  cellpadding="0"
+                  height="100%"
+                  width="100%"
+                >
+                  <!-- timeline Profile photo and name -->
+                  <tr height="50px">
+                    <!-- tameline profile photo -->
+                    <td align="center" width="20%">
+                      <img
+                        src="images/circle-solid.svg"
+                        height="28px"
+                        width="28px"
+                        alt="William Wordsworth"
+                      />
+                    </td>
+                    <!-- tameline profile photo -->
+                    <!-- tameline label -->
+                    <td>
+                      <p><b>William Wordsworth</b></p>
+                    </td>
+                    <!-- tameline label -->
+                  </tr>
+                  <!-- timeline Profile photo and name -->
+
+                  <!-- Friends Tab -->
+                  <tr height="50px">
+                    <!-- Friends tab icon photo -->
+                    <td align="center" width="20%">
+                      <img
+                        src="images/circle-user-regular.svg"
+                        height="28px"
+                        width="28px"
+                        alt="William Wordsworth"
+                      />
+                    </td>
+                    <!-- Friends tab icon -->
+                    <!-- Friends tab label -->
+                    <td>
+                      <p><b>Friends</b></p>
+                    </td>
+                    <!-- Friends tab label -->
+                  </tr>
+                  <!-- Friends tab -->
+
+                  <!-- Events Tab -->
+                  <tr height="50px">
+                    <!-- Event tab icon photo -->
+                    <td align="center" width="20%">
+                      <img
+                        src="images/calendar-xmark-regular.svg"
+                        height="28px"
+                        width="28px"
+                        alt="William Wordsworth"
+                      />
+                    </td>
+                    <!-- Event tab icon -->
+                    <!-- Event tab label -->
+                    <td>
+                      <p><b>Events</b></p>
+                    </td>
+                    <!-- Event tab label -->
+                  </tr>
+                  <!-- Events tab -->
+
+                  <!-- Saved Tab -->
+                  <tr height="50px">
+                    <!-- Saved tab icon photo -->
+                    <td align="center" width="20%">
+                      <img
+                        src="images/bookmark-solid.svg"
+                        height="28px"
+                        width="28px"
+                        alt="William Wordsworth"
+                      />
+                    </td>
+                    <!-- Saved tab icon -->
+                    <!-- Saved tab label -->
+                    <td>
+                      <p><b>Saved</b></p>
+                    </td>
+                    <!-- Saved tab label -->
+                  </tr>
+                  <!-- Saved tab -->
+
+                  <!-- Group Tab -->
+                  <tr height="50px">
+                    <!-- Groups tab icon photo -->
+                    <td align="center" width="20%">
+                      <img
+                        src="images/user-group-solid.svg"
+                        height="28px"
+                        width="28px"
+                        alt="William Wordsworth"
+                      />
+                    </td>
+                    <!-- Groups tab icon -->
+                    <!-- Groups tab label -->
+                    <td>
+                      <p><b>Groups</b></p>
+                    </td>
+                    <!-- Groups tab label -->
+                  </tr>
+                  <!-- Groups tab -->
+
+                  <!-- Market Place Tab -->
+                  <tr height="50px">
+                    <!-- Market Place tab icon photo -->
+                    <td align="center" width="20%">
+                      <img
+                        src="images/store-solid.svg"
+                        height="28px"
+                        width="28px"
+                        alt="Market Place Icon"
+                      />
+                    </td>
+                    <!-- Market place tab icon -->
+                    <!-- market place tab label -->
+                    <td>
+                      <p><b>Market Place</b></p>
+                    </td>
+                    <!-- Market place tab label -->
+                  </tr>
+                  <!-- market place tab -->
+
+                  <!-- Watch Tab -->
+                  <tr height="50px">
+                    <!-- Watch tab icon photo -->
+                    <td align="center" width="20%">
+                      <img
+                        src="images/display-solid.svg"
+                        height="28px"
+                        width="28px"
+                        alt="Watch video icon"
+                      />
+                    </td>
+                    <!-- Watch tab icon -->
+                    <!-- watch tab label -->
+                    <td>
+                      <p><b>Watch</b></p>
+                    </td>
+                    <!-- Watch tab label -->
+                  </tr>
+                  <!-- Watch tab -->
+
+                  <!-- Memories Tab -->
+                  <tr height="50px">
+                    <!-- memories tab icon photo -->
+                    <td align="center" width="20%">
+                      <img
+                        src="images/clock-regular.svg"
+                        height="28px"
+                        width="28px"
+                        alt="Memories Icon"
+                      />
+                    </td>
+                    <!-- memories tab icon -->
+                    <!-- memories tab label -->
+                    <td>
+                      <p><b>Memories</b></p>
+                    </td>
+                    <!-- Memories tab label -->
+                  </tr>
+                  <!-- Memories tab -->
+
+                  <!-- Pages Tab -->
+                  <tr height="50px">
+                    <!-- Pages tab icon photo -->
+                    <td align="center" width="20%">
+                      <img
+                        src="images/flag-regular.svg"
+                        height="28px"
+                        width="28px"
+                        alt="Pages Icon"
+                      />
+                    </td>
+                    <!-- pages tab icon -->
+                    <!-- pages tab label -->
+                    <td>
+                      <p><b>Pages</b></p>
+                    </td>
+                    <!-- pages tab label -->
+                  </tr>
+                  <!-- pages tab -->
+
+                  <!-- Saved Tab -->
+                  <tr height="50px">
+                    <!-- Saved tab icon photo -->
+                    <td align="center" width="20%">
+                      <img
+                        src="images/bookmark-solid.svg"
+                        height="28px"
+                        width="28px"
+                        alt="William Wordsworth"
+                      />
+                    </td>
+                    <!-- Saved tab icon -->
+                    <!-- Saved tab label -->
+                    <td>
+                      <p><b>Saved</b></p>
+                    </td>
+                    <!-- Saved tab label -->
+                  </tr>
+                  <!-- Saved tab -->
+
+                  <!-- Saved Tab -->
+                  <tr height="50px">
+                    <!-- Saved tab icon photo -->
+                    <td align="center" width="20%">
+                      <img
+                        src="images/bookmark-solid.svg"
+                        height="28px"
+                        width="28px"
+                        alt="William Wordsworth"
+                      />
+                    </td>
+                    <!-- Saved tab icon -->
+                    <!-- Saved tab label -->
+                    <td>
+                      <p><b>Saved</b></p>
+                    </td>
+                    <!-- Saved tab label -->
+                  </tr>
+                  <!-- Saved tab -->
+
+                  <!-- Saved Tab -->
+                  <tr height="50px">
+                    <!-- Saved tab icon photo -->
+                    <td align="center" width="20%">
+                      <img
+                        src="images/bookmark-solid.svg"
+                        height="28px"
+                        width="28px"
+                        alt="William Wordsworth"
+                      />
+                    </td>
+                    <!-- Saved tab icon -->
+                    <!-- Saved tab label -->
+                    <td>
+                      <p><b>Saved</b></p>
+                    </td>
+                    <!-- Saved tab label -->
+                  </tr>
+                  <!-- Saved tab -->
+
+                  <!-- Saved Tab -->
+                  <tr height="50px">
+                    <!-- Saved tab icon photo -->
+                    <td align="center" width="20%">
+                      <img
+                        src="images/bookmark-solid.svg"
+                        height="28px"
+                        width="28px"
+                        alt="William Wordsworth"
+                      />
+                    </td>
+                    <!-- Saved tab icon -->
+                    <!-- Saved tab label -->
+                    <td>
+                      <p><b>Saved</b></p>
+                    </td>
+                    <!-- Saved tab label -->
+                  </tr>
+                  <!-- Saved tab -->
+                </table>
+                <!-- timeline inner table- takes pp and name -->
+              </td>
+              <!-- timeline td-->
+            </tr>
+            <!-- timeline tr-->
+            <tr>
+              <td></td>
+            </tr>
+          </table>
+        </td>
+        <!-- left side bar -->
+        <!-- content -->
+        <td width="57%" style="background-color: #f0f2f5">
+          <!-- content table -->
+          <table border="0" cellspacing="0" cellpadding="0" width="100%">
+            <!-- story tr -->
+            <tr align="center">
+              <td height="198px">
+                <img src="images/story.png" alt="Story" />
+              </td>
+
+              <td height="198px">
+                <img src="images/story.png" alt="Story" />
+              </td>
+
+              <td height="198px">
+                <img src="images/story.png" alt="Story" />
+              </td>
+
+              <td height="198px">
+                <img src="images/story.png" alt="Story" />
+              </td>
+
+              <td height="198px">
+                <img src="images/story.png" alt="Story" />
+              </td>
+            </tr>
+            <!-- story tr -->
+            <!-- Whats on your mind -->
+            <tr>
+              <td align="center" colspan="5" height="123px" width="100%">
+                <!-- whats on your mind table -->
+                <table
+                  border="0"
+                  cellspacing="0"
+                  cellpadding="0"
+                  width="80%"
+                  height="100%"
+                  style="background-color: white"
+                >
+                  <!-- pp and input field -->
+                  <tr>
+                    <td height="50%" colspan="3">
+                      <!-- table -->
+                      <table
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        width="100%"
+                        height="100%"
+                      >
+                        <tr>
+                          <td width="10%">
+                            <img
+                              src="images/circle-solid.svg"
+                              alt="Profile Picture"
+                              height="40px"
+                              width="40px"
+                            />
+                          </td>
+                          <td width="90%">
+                            <input
+                              class="woum"
+                              type="text"
+                              name="post"
+                              value=""
+                              placeholder="What's on your mind, William?"
+                            />
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- table -->
+                    </td>
+                  </tr>
+                  <!-- pp and input fiels -->
+                  <!-- live video add video img -->
+                  <tr>
+                    <!-- live video -->
+                    <td>
+                      <!-- live video table -->
+                      <table
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        width="100%"
+                        height="100%"
+                      >
+                        <!-- live video tr -->
+                        <tr>
+                          <!-- live video icon -->
+                          <td>
+                            <img
+                              src="images/video-solid.svg"
+                              height="28px"
+                              width="28px"
+                              alt="Live video Icon"
+                            />
+                          </td>
+                          <!-- live video icon -->
+                          <!-- live video content -->
+                          <td><p>Live Video</p></td>
+                          <!-- live video content -->
+                        </tr>
+                        <!-- live video tr -->
+                      </table>
+                      <!-- live video table -->
+                    </td>
+                    <!-- live video -->
+
+                    <!-- Photo/video -->
+                    <td>
+                      <!-- Photo/video table -->
+                      <table
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        width="100%"
+                        height="100%"
+                      >
+                        <!-- Photo/video tr -->
+                        <tr>
+                          <!-- Photo/video icon -->
+                          <td>
+                            <img
+                              src="images/images-solid.svg"
+                              height="28px"
+                              width="28px"
+                              alt="Live video Icon"
+                            />
+                          </td>
+                          <!-- photo/video icon -->
+                          <!-- photo/video content -->
+                          <td><p>Photo/video</p></td>
+                          <!-- photo video content -->
+                        </tr>
+                        <!-- Photo/video tr -->
+                      </table>
+                      <!-- Photo/video table -->
+                    </td>
+                    <!-- Photo/video -->
+
+                    <!-- Feeling/activity -->
+                    <td>
+                      <!-- Feeling/activity table -->
+                      <table
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        width="100%"
+                        height="100%"
+                      >
+                        <!-- Feeling/activity tr -->
+                        <tr>
+                          <!-- Feeling/activity icon -->
+                          <td>
+                            <img
+                              src="images/face-smile-solid.svg"
+                              height="28px"
+                              width="28px"
+                              alt="smile"
+                            />
+                          </td>
+                          <!-- Feeling/activity icon -->
+                          <!-- Feeling/activity content -->
+                          <td><p>Live Video</p></td>
+                          <!-- Feeling/activity content -->
+                        </tr>
+                        <!-- Feeling/activity tr -->
+                      </table>
+                      <!-- Feeling/activity table -->
+                    </td>
+                    <!-- Feeling/activity video -->
+                  </tr>
+                  <!-- live video add video img -->
+                </table>
+                <!-- whats on your mind table -->
+              </td>
+            </tr>
+            <!-- Whats on your mind -->
+
+            <!-- create room -->
+            <tr>
+              <td align="center" width="100%" colspan="5" height="100px">
+                <!-- create room main table -->
+                <table
+                  border="0"
+                  cellspacing="0"
+                  cellpadding="0"
+                  width="80%"
+                  height="72px"
+                  style="background-color: white"
+                >
+                  <tr>
+                    <td width="30%" height="40px">
+                      <p
+                        style="
+                          border: 1px solid;
+                          border-radius: 20px;
+                          height: 40px;
+                          text-align: center;
+                        "
+                      >
+                        Create room
+                      </p>
+                    </td>
+                    <td align="center" height="40px">
+                      <img
+                        src="images/circle-solid.svg"
+                        alt="avatar"
+                        height="40px"
+                        width="40px"
+                      />
+                    </td>
+                    <td align="center" height="40px">
+                      <img
+                        src="images/circle-solid.svg"
+                        alt="avatar"
+                        height="40px"
+                        width="40px"
+                      />
+                    </td>
+                    <td align="center" height="40px">
+                      <img
+                        src="images/circle-solid.svg"
+                        alt="avatar"
+                        height="40px"
+                        width="40px"
+                      />
+                    </td>
+                    <td align="center" height="40px">
+                      <img
+                        src="images/circle-solid.svg"
+                        alt="avatar"
+                        height="40px"
+                        width="40px"
+                      />
+                    </td>
+                    <td align="center" height="40px">
+                      <img
+                        src="images/circle-solid.svg"
+                        alt="avatar"
+                        height="40px"
+                        width="40px"
+                      />
+                    </td>
+                  </tr>
+                </table>
+                <!-- create room main table -->
+              </td>
+            </tr>
+            <!-- create room -->
+            <!-- post -->
+            <tr>
+              <td align="center" width="100%" colspan="5" height="220px">
+                <table
+                  border="0"
+                  cellspacing="0"
+                  cellpadding="0"
+                  width="80%"
+                  height="100%"
+                  style="background-color: white"
+                >
+                  <tr align="center">
+                    <td>
+                      <img
+                        src="images/add.png"
+                        alt="add friend"
+                        height="218px"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        src="images/add.png"
+                        alt="add friend"
+                        height="218px"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        src="images/add.png"
+                        alt="add friend"
+                        height="218px"
+                      />
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- post -->
+          </table>
+          <!-- content table -->
+        </td>
+        <!-- content -->
+        <!-- right side bar -->
+        <td width="18%" style="background-color: #f0f2f5">
+          <!-- right side bar table  -->
+          <table
+            border="0"
+            cellspacing="0"
+            cellpadding="0"
+            height="0px"
+            width="100%"
+          >
+            <!-- contacts new room search options tr -->
+            <tr>
+              <!-- contacts label -->
+              <td width="30%" height="50px">
+                <h3>Contacts</h3>
+              </td>
+              <!-- contacts label -->
+              <!-- new room search options icons -->
+              <td>
+                <!-- the table takes the three icons -->
+                <table
+                  border="0"
+                  cellspacing="0"
+                  cellpadding="0"
+                  height="100%"
+                  width="100%"
+                >
+                  <!-- contacts new room search options tr inner -->
+                  <tr>
+                    <!-- new room icon -->
+                    <td align="right" width="50%">
+                      <img
+                        src="images/video-solid.svg"
+                        alt="New Room icon"
+                        title="New Room"
+                        width="16px"
+                        height="16px"
+                      />
+                    </td>
+                    <!-- new room icon -->
+                    <!-- search icon -->
+                    <td align="center" width="30%">
+                      <img
+                        src="images/magnifying-glass-solid.svg"
+                        alt="search icon"
+                        title="Search"
+                        width="16px"
+                        height="16px"
+                      />
+                    </td>
+                    <!-- search icon -->
+                    <!-- option icon -->
+                    <td align="left" width="20%">
+                      <img
+                        src="images/ellipsis-solid.svg"
+                        alt="Options icon"
+                        title="Options"
+                        width="16px"
+                        height="16px"
+                      />
+                    </td>
+                    <!-- option icon -->
+                  </tr>
+                  <!-- contacts new room search options tr inner -->
+                </table>
+                <!-- the table takes the three icons -->
+              </td>
+              <!-- new room search options icons -->
+            </tr>
+            <!-- contacts new room search options tr -->
+            <!-- active people -->
+            <tr>
+              <td colspan="3" height="50px">
+                <!-- active people table -->
+                <table
+                  border="0"
+                  cellspacing="0"
+                  cellpadding="0"
+                  height="100%"
+                  width="100%"
+                >
+                  <tr>
+                    <!-- active people pp -->
+                    <td width="15%">
+                      <img
+                        src="images/circle-solid.svg"
+                        height="28px"
+                        alt="Profile Picture"
+                      />
+                    </td>
+                    <!-- active people pp -->
+                    <!-- active people name -->
+                    <td>
+                      <p><b>William Shakespeare</b></p>
+                    </td>
+                    <!-- active people names -->
+                  </tr>
+                </table>
+                <!-- active people table -->
+              </td>
+            </tr>
+            <!-- active people -->
+
+            <!-- active people -->
+            <tr>
+              <td colspan="3" height="50px">
+                <!-- active people table -->
+                <table
+                  border="0"
+                  cellspacing="0"
+                  cellpadding="0"
+                  height="100%"
+                  width="100%"
+                >
+                  <tr>
+                    <!-- active people pp -->
+                    <td width="15%">
+                      <img
+                        src="images/circle-solid.svg"
+                        height="28px"
+                        alt="Profile Picture"
+                      />
+                    </td>
+                    <!-- active people pp -->
+                    <!-- active people name -->
+                    <td>
+                      <p><b>Charles Dickens</b></p>
+                    </td>
+                    <!-- active people names -->
+                  </tr>
+                </table>
+                <!-- active people table -->
+              </td>
+            </tr>
+            <!-- active people -->
+
+            <!-- active people -->
+            <tr>
+              <td colspan="3" height="50px">
+                <!-- active people table -->
+                <table
+                  border="0"
+                  cellspacing="0"
+                  cellpadding="0"
+                  height="100%"
+                  width="100%"
+                >
+                  <tr>
+                    <!-- active people pp -->
+                    <td width="15%">
+                      <img
+                        src="images/circle-solid.svg"
+                        height="28px"
+                        alt="Profile Picture"
+                      />
+                    </td>
+                    <!-- active people pp -->
+                    <!-- active people name -->
+                    <td>
+                      <p><b>Robert Frost</b></p>
+                    </td>
+                    <!-- active people names -->
+                  </tr>
+                </table>
+                <!-- active people table -->
+              </td>
+            </tr>
+            <!-- active people -->
+
+            <!-- active people -->
+            <tr>
+              <td colspan="3" height="50px">
+                <!-- active people table -->
+                <table
+                  border="0"
+                  cellspacing="0"
+                  cellpadding="0"
+                  height="100%"
+                  width="100%"
+                >
+                  <tr>
+                    <!-- active people pp -->
+                    <td width="15%">
+                      <img
+                        src="images/circle-solid.svg"
+                        height="28px"
+                        alt="Profile Picture"
+                      />
+                    </td>
+                    <!-- active people pp -->
+                    <!-- active people name -->
+                    <td>
+                      <p><b>William Somerset Maugham</b></p>
+                    </td>
+                    <!-- active people names -->
+                  </tr>
+                </table>
+                <!-- active people table -->
+              </td>
+            </tr>
+            <!-- active people -->
+
+            <!-- active people -->
+            <tr>
+              <td colspan="3" height="50px">
+                <!-- active people table -->
+                <table
+                  border="0"
+                  cellspacing="0"
+                  cellpadding="0"
+                  height="100%"
+                  width="100%"
+                >
+                  <tr>
+                    <!-- active people pp -->
+                    <td width="15%">
+                      <img
+                        src="images/circle-solid.svg"
+                        height="28px"
+                        alt="Profile Picture"
+                      />
+                    </td>
+                    <!-- active people pp -->
+                    <!-- active people name -->
+                    <td>
+                      <p><b>Alfred Tennyson</b></p>
+                    </td>
+                    <!-- active people names -->
+                  </tr>
+                </table>
+                <!-- active people table -->
+              </td>
+            </tr>
+            <!-- active people -->
+
+            <!-- active people -->
+            <tr>
+              <td colspan="3" height="50px">
+                <!-- active people table -->
+                <table
+                  border="0"
+                  cellspacing="0"
+                  cellpadding="0"
+                  height="100%"
+                  width="100%"
+                >
+                  <tr>
+                    <!-- active people pp -->
+                    <td width="15%">
+                      <img
+                        src="images/circle-solid.svg"
+                        height="28px"
+                        alt="Profile Picture"
+                      />
+                    </td>
+                    <!-- active people pp -->
+                    <!-- active people name -->
+                    <td>
+                      <p><b>Francis Bacon</b></p>
+                    </td>
+                    <!-- active people names -->
+                  </tr>
+                </table>
+                <!-- active people table -->
+              </td>
+            </tr>
+            <!-- active people -->
+
+            <!-- active people -->
+            <tr>
+              <td colspan="3" height="50px">
+                <!-- active people table -->
+                <table
+                  border="0"
+                  cellspacing="0"
+                  cellpadding="0"
+                  height="100%"
+                  width="100%"
+                >
+                  <tr>
+                    <!-- active people pp -->
+                    <td width="15%">
+                      <img
+                        src="images/circle-solid.svg"
+                        height="28px"
+                        alt="Profile Picture"
+                      />
+                    </td>
+                    <!-- active people pp -->
+                    <!-- active people name -->
+                    <td>
+                      <p><b>charles dickens</b></p>
+                    </td>
+                    <!-- active people names -->
+                  </tr>
+                </table>
+                <!-- active people table -->
+              </td>
+            </tr>
+            <!-- active people -->
+
+            <!-- active people -->
+            <tr>
+              <td colspan="3" height="50px">
+                <!-- active people table -->
+                <table
+                  border="0"
+                  cellspacing="0"
+                  cellpadding="0"
+                  height="100%"
+                  width="100%"
+                >
+                  <tr>
+                    <!-- active people pp -->
+                    <td width="15%">
+                      <img
+                        src="images/circle-solid.svg"
+                        height="28px"
+                        alt="Profile Picture"
+                      />
+                    </td>
+                    <!-- active people pp -->
+                    <!-- active people name -->
+                    <td>
+                      <p><b>charles dickens</b></p>
+                    </td>
+                    <!-- active people names -->
+                  </tr>
+                </table>
+                <!-- active people table -->
+              </td>
+            </tr>
+            <!-- active people -->
+
+            <!-- active people -->
+            <tr>
+              <td colspan="3" height="50px">
+                <!-- active people table -->
+                <table
+                  border="0"
+                  cellspacing="0"
+                  cellpadding="0"
+                  height="100%"
+                  width="100%"
+                >
+                  <tr>
+                    <!-- active people pp -->
+                    <td width="15%">
+                      <img
+                        src="images/circle-solid.svg"
+                        height="28px"
+                        alt="Profile Picture"
+                      />
+                    </td>
+                    <!-- active people pp -->
+                    <!-- active people name -->
+                    <td>
+                      <p><b>charles dickens</b></p>
+                    </td>
+                    <!-- active people names -->
+                  </tr>
+                </table>
+                <!-- active people table -->
+              </td>
+            </tr>
+            <!-- active people -->
+
+            <!-- active people -->
+            <tr>
+              <td colspan="3" height="50px">
+                <!-- active people table -->
+                <table
+                  border="0"
+                  cellspacing="0"
+                  cellpadding="0"
+                  height="100%"
+                  width="100%"
+                >
+                  <tr>
+                    <!-- active people pp -->
+                    <td width="15%">
+                      <img
+                        src="images/circle-solid.svg"
+                        height="28px"
+                        alt="Profile Picture"
+                      />
+                    </td>
+                    <!-- active people pp -->
+                    <!-- active people name -->
+                    <td>
+                      <p><b>charles dickens</b></p>
+                    </td>
+                    <!-- active people names -->
+                  </tr>
+                </table>
+                <!-- active people table -->
+              </td>
+            </tr>
+            <!-- active people -->
+
+            <!-- active people -->
+            <tr>
+              <td colspan="3" height="50px">
+                <!-- active people table -->
+                <table
+                  border="0"
+                  cellspacing="0"
+                  cellpadding="0"
+                  height="100%"
+                  width="100%"
+                >
+                  <tr>
+                    <!-- active people pp -->
+                    <td width="15%">
+                      <img
+                        src="images/circle-solid.svg"
+                        height="28px"
+                        alt="Profile Picture"
+                      />
+                    </td>
+                    <!-- active people pp -->
+                    <!-- active people name -->
+                    <td>
+                      <p><b>charles dickens</b></p>
+                    </td>
+                    <!-- active people names -->
+                  </tr>
+                </table>
+                <!-- active people table -->
+              </td>
+            </tr>
+            <!-- active people -->
+
+            <!-- active people -->
+            <tr>
+              <td colspan="3" height="50px">
+                <!-- active people table -->
+                <table
+                  border="0"
+                  cellspacing="0"
+                  cellpadding="0"
+                  height="100%"
+                  width="100%"
+                >
+                  <tr>
+                    <!-- active people pp -->
+                    <td width="15%">
+                      <img
+                        src="images/circle-solid.svg"
+                        height="28px"
+                        alt="Profile Picture"
+                      />
+                    </td>
+                    <!-- active people pp -->
+                    <!-- active people name -->
+                    <td>
+                      <p><b>charles dickens</b></p>
+                    </td>
+                    <!-- active people names -->
+                  </tr>
+                </table>
+                <!-- active people table -->
+              </td>
+            </tr>
+            <!-- active people -->
+          </table>
+          <!-- right side bar table  -->
+        </td>
+        <!-- right side bar -->
+      </tr>
+    </table>
+  </body>
+</html>
